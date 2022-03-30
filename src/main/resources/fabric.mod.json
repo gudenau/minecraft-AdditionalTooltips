@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "gud_tooltips",
+  "version": "${version}",
+
+  "name": "Additional Tooltips",
+  "description": "Adds more tooltips to items!",
+  "authors": [
+    "gudenau"
+  ],
+  "contact": {},
+
+  "icon": "assets/gud_tooltips/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "net.gudenau.minecraft.tooltips.AdditionalTooltips"
+    ]
+  },
+  "mixins": [
+    "gud_tooltips.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "conflicts": {
+    "inspecio": "*"
+  }
+}
